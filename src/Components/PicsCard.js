@@ -1,5 +1,6 @@
-import React from "react";
-import { Card, CardText, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import React, { useState, useEffect} from "react";
+import PictureList from "./Main"; /* this may have to change*/
+
 
 const PicsCard = props => {
     return (

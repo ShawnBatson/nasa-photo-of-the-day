@@ -7,7 +7,7 @@ const [pics, setPic] = useState('');
 
 useEffect(() => {
     axios   
-        .get('https://api.nasa.gov/planetary/apod?api_key=VFgxUm2CQaExyYQdE3kdndoOn8TL5KhpMaXwk3zo')
+        .get('https://api.nasa.gov/planetary/apod?api_key=tnfMthxdDALHltp6Qxlc3Rack8Ok3QZBWQGYkIQm')
         .then(res=> {
             setPic(res.data)    
             console.log(res.data)
@@ -20,7 +20,7 @@ useEffect(() => {
 // if (!props.PictureList) return <h3>Loading...</h3>    
 
 return (
-    <div classname="mainPic">
+    <div className="mainPic">
         {pics.map(pic => {
             return (
                 <PicsCard 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from "react";
-import PictureList from "./Main"; /* this may have to change*/
+import PictureList from "./Main";
 
 
 const PicsCard = props => {

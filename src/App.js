@@ -13,8 +13,9 @@ function App() {
         app! Have fun 🚀!
       </p>
         <div>
-          <PicsCard />
-          <PictureList />
+          <PicsCard 
+           />
+          {/* <PictureList /> */}
         </div>
     </div>
   );

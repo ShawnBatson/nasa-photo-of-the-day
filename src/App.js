@@ -53,6 +53,24 @@ const Footer = styled.footer`
   margin: 2.5rem, 0;
   padding: 2rem;
 `;
+const Container = styled.div`
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+`;
+const Para = styled.p`
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0, auto;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+`;
+const Space = styled.div`
+  display: flex;
+  width: 50%;
+`;
 
 function App() {
   return (
@@ -74,9 +92,15 @@ function App() {
             <PictureList />
           </Pic>
         </div>
-        <div>
-          <p>These are beautiful pictures.</p>
-        </div>
+        <Container className="container">
+          <Space>
+            <Para>These are beautiful pictures.</Para>
+          </Space>
+
+          <Space>
+            <Para>these are also good pictures</Para>
+          </Space>
+        </Container>
       </section>
       <Footer>
         <p>This is a product of a student of Lambda School.</p>

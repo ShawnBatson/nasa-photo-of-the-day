@@ -31,3 +31,16 @@
     transform: rotate(360deg);
   }
 }
+
+.background {
+  padding-top: 2%;
+  margin: 0, auto;
+  padding-bottom: 2%;
+  background-image: url("./img/White-line.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainPic {
+  background: white;
+}

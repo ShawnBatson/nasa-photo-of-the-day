@@ -39,6 +39,8 @@ const Pic = styled.div`
   border: 2px solid red;
 `;
 
+const Card = styled.div``;
+
 const Intro = styled.div`
   margin-top: 2.5rem;
   border: 1px solid green;
@@ -56,6 +58,7 @@ const Footer = styled.footer`
 const Container = styled.div`
   display: flex;
   width: 100%;
+  height: 100px;
   border: 1px solid red;
 `;
 const Para = styled.p`
@@ -70,41 +73,53 @@ const Para = styled.p`
 const Space = styled.div`
   display: flex;
   width: 50%;
+  margin-top: 2%;
 `;
+
+// const Background = styled.div`
+//   padding-top: 2%;
+//   margin: 0, auto;
+//   padding-bottom: 2%;
+//   background: url("../img/White-line.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// `;
 
 function App() {
   return (
     <div className="App">
-      <Nav>
-        <NavLink href="#"> Home </NavLink>
+      <div className="background">
+        <Nav>
+          <NavLink href="#"> Home </NavLink>
 
-        <NavLink href="#"> About </NavLink>
+          <NavLink href="#"> About </NavLink>
 
-        <NavLink href="#"> Contact </NavLink>
-      </Nav>
+          <NavLink href="#"> Contact </NavLink>
+        </Nav>
 
-      <Intro>
-        <h1>Welcome to NASA's picture of the day!</h1>
-      </Intro>
-      <section>
-        <div>
-          <Pic>
-            <PictureList />
-          </Pic>
-        </div>
-        <Container className="container">
-          <Space>
-            <Para>These are beautiful pictures.</Para>
-          </Space>
+        <Intro>
+          <h1>Welcome to NASA's picture of the day!</h1>
+        </Intro>
+        <section>
+          <Card>
+            <Pic>
+              <PictureList />
+            </Pic>
+          </Card>
+          <Container className="container">
+            <Space>
+              <Para>These are beautiful pictures.</Para>
+            </Space>
 
-          <Space>
-            <Para>these are also good pictures</Para>
-          </Space>
-        </Container>
-      </section>
-      <Footer>
-        <p>This is a product of a student of Lambda School.</p>
-      </Footer>
+            <Space>
+              <Para>these are also good pictures</Para>
+            </Space>
+          </Container>
+        </section>
+        <Footer>
+          <p>This is a product of a student of Lambda School.</p>
+        </Footer>
+      </div>
     </div>
   );
 }

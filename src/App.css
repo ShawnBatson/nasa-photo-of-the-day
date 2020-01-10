@@ -42,5 +42,48 @@
 }
 
 .mainPic {
-  background: white;
+  display: flex;
+  justify-content: center;
+  background: darkgrey;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.image {
+  margin: 2rem;
+  border-radius: 2px;
+}
+
+.title {
+  padding: 2%;
+  margin: 2%;
+}
+
+.cardStock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+  font-size: 1.5rem;
+  background: lightgrey;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 2px 4px;
+  margin-bottom: 2rem;
+}
+
+.explanation {
+  margin: 2%;
+  padding: 2%;
+}
+
+.imageStock {
+  border-radius: 20px;
+  opacity: 0.95;
 }

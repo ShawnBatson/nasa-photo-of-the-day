@@ -25,7 +25,7 @@ const NavLink = styled.a`
   padding-top: 2.5rem;
   font-size: 1.1rem;
 
-  &:hover {
+  &:hover 0
     color: red;
   }
 `;

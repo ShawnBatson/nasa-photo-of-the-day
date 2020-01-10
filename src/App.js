@@ -3,6 +3,13 @@ import "./App.css";
 import PictureList from "./Components/Main";
 // import { Nav, NavLink } from "reactstrap";
 import styled from "styled-components";
+// import DateFnsUtils from "@date-io/date-fns";
+// import {
+//   DatePicker,
+//   TimePicker,
+//   DateTimePicker,
+//   MuiPickersUtilsProvider
+// } from "@material-ui/pickers";
 
 const Bg = styled.div`
   background-image: url("Img/White-Line.jpg");
@@ -13,7 +20,7 @@ const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   margin: 0, auto;
-  border: 2px solid red;
+  // border: 2px solid red;
 `;
 
 const NavLink = styled.a`
@@ -25,7 +32,7 @@ const NavLink = styled.a`
   padding-top: 2.5rem;
   font-size: 1.1rem;
 
-  &:hover 0
+  &:hover {
     color: red;
   }
 `;
@@ -36,14 +43,14 @@ const Pic = styled.div`
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
   padding: 5rem;
-  border: 2px solid red;
+  // border: 2px solid red;
 `;
 
 const Card = styled.div``;
 
 const Intro = styled.div`
   margin-top: 2.5rem;
-  border: 1px solid green;
+  color: grey;
 `;
 
 const Footer = styled.footer`
@@ -86,6 +93,8 @@ const Space = styled.div`
 // `;
 
 function App() {
+  const [selectedDate, handleDateChange] = useState(new Date());
+
   return (
     <div className="App">
       <div className="background">
@@ -107,6 +116,14 @@ function App() {
             </Pic>
           </Card>
           <Container className="container">
+            {/* <MuiPickersUtilsProvider utils={DateFnsUtils}>
+              <DatePicker value={selectedDate} onChange={handleDateChange} />
+              <TimePicker value={selectedDate} onChange={handleDateChange} />
+              <DateTimePicker
+                value={selectedDate}
+                onChange={handleDateChange}
+              />
+            </MuiPickersUtilsProvider> */}
             <Space>
               <Para>These are beautiful pictures.</Para>
             </Space>

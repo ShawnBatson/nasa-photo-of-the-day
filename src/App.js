@@ -54,6 +54,7 @@ const Footer = styled.footer`
   padding: 2rem;
 `;
 
+
 function App() {
   return (
     <div className="App">
@@ -84,5 +85,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

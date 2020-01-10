@@ -83,15 +83,6 @@ const Space = styled.div`
   margin-top: 2%;
 `;
 
-// const Background = styled.div`
-//   padding-top: 2%;
-//   margin: 0, auto;
-//   padding-bottom: 2%;
-//   background: url("../img/White-line.png");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// `;
-
 function App() {
   const [selectedDate, handleDateChange] = useState(new Date());
 

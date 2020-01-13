@@ -66,7 +66,7 @@ const Container = styled.div`
   display: flex;
   width: 100%;
   height: 100px;
-  border: 1px solid red;
+  // border: 1px solid red;
 `;
 const Para = styled.p`
   display: flex;
@@ -115,13 +115,13 @@ function App() {
                 onChange={handleDateChange}
               />
             </MuiPickersUtilsProvider> */}
-            <Space>
+            {/* <Space>
               <Para>These are beautiful pictures.</Para>
             </Space>
 
             <Space>
               <Para>these are also good pictures</Para>
-            </Space>
+            </Space> */}
           </Container>
         </section>
         <Footer>

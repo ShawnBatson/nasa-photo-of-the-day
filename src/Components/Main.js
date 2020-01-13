@@ -8,8 +8,9 @@ function PictureList() {
   useEffect(() => {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=tnfMthxdDALHltp6Qxlc3Rack8Ok3QZBWQGYkIQm"
+        "https://api.nasa.gov/planetary/apod?api_key=tnfMthxdDALHltp6Qxlc3Rack8Ok3QZBWQGYkIQm=${photoDate}"
       )
+
       .then(res => {
         setPic(res.data);
         console.log(res.data);
